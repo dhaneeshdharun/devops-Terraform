@@ -1,7 +1,7 @@
 <settings>
 <servers>
   <server>
-    <id>nextwork-nextwork-packages</id>
+    <id>dhaneesh-dhaneesh-repo</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
@@ -9,14 +9,14 @@
 
 <profiles>
   <profile>
-    <id>nextwork-nextwork-packages</id>
+    <id>dhaneesh-dhaneesh-repo</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>nextwork-nextwork-packages</id>
-        <url>https://nextwork-494713367427.d.codeartifact.eu-north-1.amazonaws.com/maven/nextwork-packages/</url>
+        <id>dhaneesh-dhaneesh-repo</id>
+        <url>https://dhaneesh-494713367427.d.codeartifact.eu-north-1.amazonaws.com/maven/dhaneesh-repo/</url>
       </repository>
     </repositories>
   </profile>
@@ -24,9 +24,9 @@
 
 <mirrors>
   <mirror>
-    <id>nextwork-nextwork-packages</id>
-    <name>nextwork-nextwork-packages</name>
-    <url>https://nextwork-494713367427.d.codeartifact.eu-north-1.amazonaws.com/maven/nextwork-packages/</url>
+    <id>dhaneesh-dhaneesh-repo</id>
+    <name>dhaneesh-dhaneesh-repo</name>
+    <url>https://dhaneesh-494713367427.d.codeartifact.eu-north-1.amazonaws.com/maven/dhaneesh-repo/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>

@@ -7,7 +7,7 @@ phases:
   pre_build:
     commands:
      - echo Installing dependencies...
-     - export  CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 494713367427 --region eu-north-1 --query authorizationToken --output text`
+     - export  CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain dhaneesh --domain-owner 494713367427 --region eu-north-1 --query authorizationToken --output text`
   build:
     commands:
      - echo build started on today$(date)
@@ -19,6 +19,5 @@ phases:
 artifacts:
   files: 
      - target/nextwork-web-project.war
-     - appspec.yml
-     - scripts/**/*
+
   discard-paths: no     
